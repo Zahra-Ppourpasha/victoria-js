@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید/Vicoria:فروشگاه عطر و ادکلن</title>
+    <!-- icon -->
+    <link rel="icon" href="images/icon1.jfif">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <script src="basket.js" defer></script>
+</head>
+
+<body class="basket-page container-fluid">
+    <div class="tax-modal row justify-content-center align-items-center">
+        <div class="col-12"><i class="bi bi-x-octagon fs-3 close-tax"></i></div>
+        <h3 class="col-12 d-flex justify-content-center align-items-center">ویکتوریا</h3>
+        <span class="total-price-text col-6">جمع کل محصولات:</span>
+        <span class="total-price col-6"></span>
+        <span class="tax-text col-6">جمع کل محصولات با احتساب 9%مالیات:</span>
+        <span class="tax-price-final col-6"></span>
+        <button class="btn btn-success w-25 tax-btn">ادامه</button>
+    </div>
+    <!-- dis modal code -->
+    <div class="dis-modal d-none flex-column justify-content-center align-items-center">
+        <div class="d-flex align-items-start justify-content-start"><i class="bi bi-x-octagon fs-3 close-dis-box"></i>
+        </div>
+        <h3 class=" d-flex justify-content-center align-items-center my-2">لطفا کد تخفیف را وارد کنید</h3>
+        <input type="text" placeholder="کد تخفیف را وارد کنید" class=" dis-code">
+        <button class="btn btn-success w-25 my-3 continu-btn">ادامه</button>
+        <button class="btn btn-success w-25 my-3 continu-btn back-basket-btn d-none">برگشتن به سبد خرید</button>
+        <p class="wrong-code "></p>
+    </div>
+    <!-- dis modal -->
+    <div class="discount-box d-none row justify-content-center align-items-center">
+        <h3 class="col-12 d-flex justify-content-center align-items-center">ویکتوریا</h3>
+        <span class="total-price-text col-6">جمع کل محصولات:</span>
+        <span class="total-tax-price col-6"></span>
+        <span class="tax-text col-6">جمع کل محصولات با 20% تخفیف:</span>
+        <span class="total-price-pay col-6"></span>
+        <button class="btn btn-success w-25 pay-btn">پرداخت</button>
+    </div>
+    <!-- bedon code -->
+    <div class="without-discount d-none row justify-content-center align-items-center">
+        <h3 class="col-12 d-flex justify-content-center align-items-center">ویکتوریا</h3>
+        <span class=" col-6">جمع کل محصولات:</span>
+        <span class=" col-6 finalprice-nodis"></span>
+        <button class="btn btn-success w-25 payno-dis-btn">پرداخت</button>
+    </div>
+    <!-- pay modal -->
+    <div class="pay-modal d-none  flex-column justify-content-center align-items-center">
+        <div>
+            <h3 class="text-success d-flex justify-content-center align-items-center my-2">پرداخت با موفقیت انجام شد
+            </h3>
+            <button class="btn btn-success  my-3"><a href="index.html" class="text-light">برگشت به صفحه
+                    اصلی</a></button>
+        </div>
+    </div>
+
+    <section class="basket-box">
+        <h1 class="d-flex justify-content-center align-items-center py-3">سبد خرید من</h1>
+        <div class="d-flex align-items-center justify-content-between">
+            <button class="btn btn-danger clear-basket-btn">خالی کردن سبد خرید</button>
+            <button class="btn btn-info clear-basket-btn"><a href="index.html">رفتن به صفحه اصلی</a></button>
+        </div>
+        <div class="all-baskets d-flex flex-column justify-content-between align-items-start ">
+            <div class="perfume-name align-items-start ">
+            </div>
+        </div>
+    </section>
+    <div class="w-100 d-flex justify-content-center align-items-center p-2">
+        <span class="product-price p-2 fs-3">قیمت کل:</span>
+        <span class="product-countprice fs-3"></span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center"><button
+            class="btn btn-success  my-3 discount-btn">ادامه پرداخت</button></div>
+</body>
+
+</html>

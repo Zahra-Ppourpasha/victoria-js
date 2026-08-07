@@ -1,0 +1,590 @@
+@font-face {
+    font-family: vazirmatn;
+    src: url("../font/Vazir-FD-WOL.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: vazirmatn;
+    src: url("../font/Vazir-Bold-FD-WOL.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: vazirmatn;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    object-fit: cover;
+}
+main{
+    img{
+        border-radius: 8px;
+    }
+}
+/* modal */
+.discount-code-modal{
+    width: 50%;
+    background-color: #2A0A0E;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    color: azure;
+    box-shadow: 0 0 30px rgb(132, 18, 34);
+    transition: .7s;
+}
+.dis-code{
+    font-size: 2rem;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+.close-modal{
+    width: 40px;
+    height: 40px;
+    color: rgb(101, 14, 14);
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    cursor: pointer;
+}
+.code-text{
+    font-size: 18px;
+}
+/* header */
+.header-con{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+header{
+    height: 100px;
+    /* background-color: rgba(144, 106, 104,.2); */
+    background-color: #33141A;
+    display: flex;
+    padding: 4px;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+li{
+    list-style: none;
+    padding: 4px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.victoria-menu{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.logo-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.menu-icon{
+    color: rgb(205, 180, 180);
+}
+button{
+    background: none;
+    justify-content: center;
+    align-items: center;
+}
+.membership{
+    width: 120px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 0 2px;
+    color: aliceblue;
+}
+/* main */
+.site-content{
+    width: 100%;
+    height: 100%;
+}
+/* --------slide--------- */
+.slide-content{
+    position: relative;
+    /* z-index: -100; */
+}
+/* .slide-btns{
+    position: absolute;
+   
+
+} */
+.sl-btn-1{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: 2px solid black;
+    background-color: #33141A;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.sl-btn-2{
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: 2px solid black;
+    background-color: #33141A;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.img-slide{
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+/* main-- */
+.main-img{
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+.f-img{
+    width: 100%;
+    height: 300px;
+}
+.collection-img{
+    background-color: #33141A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    transform: translateX(10000px);
+    transition: .9s;
+    opacity: 0;
+}
+.coll-title{
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(900px);
+    opacity: 0;
+    border-radius: 10px;
+    border-right: 8px solid rgba(142, 46, 46, 0.693);
+    border-bottom: 8px solid rgba(142, 46, 46, 0.693);
+    transition: .9s;
+}
+
+/* product */
+.product-title-box{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid rgb(156, 59, 59);
+    border-right: 8px solid rgb(156, 59, 59);
+    padding: 10px 0;
+    transform: translateX(1400px);
+    opacity: 0;
+    transition: 1s;
+}
+.pd-cover{
+    width: 300px;
+    height: 320px;
+    
+}
+.pd-cover img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+.price-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.vic-product{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(93, 19, 19);
+    padding: 12px 0;
+    border-radius: 8px;
+    color: white;
+    transform: translateX(10000px);
+    opacity: 0;
+    transition: 2s;
+}
+.pd-item{
+    height: 100%;
+}
+.animationtitle{
+    opacity: 1;
+    transform: translateX(0);
+}
+/* dis time */
+.dis-time{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.sec{
+    background-color: white;
+    color: #000;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 18px;
+}
+.min{
+    background-color: white;
+    color: #000;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 18px;
+}
+.real-price{
+    font-size: 10px;
+}
+.pd-body{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+}
+/* object */
+.showbasket{
+    width: 30%;
+    display: inline !important;
+}
+.close-product-box{
+    cursor: pointer;
+    color: #520413;
+}
+.closepd{
+    display: block !important;
+}
+.pdinfoClose{
+    display: none !important;
+}
+/* basket html */
+.buy-basket{
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    width: 100px;
+    height: 60px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: rgb(54, 126, 12);
+    border-radius: 8px;
+}
+.basket-box{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(61, 2, 2);
+    margin: 30px auto;
+    padding: 8px 0;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.basket-pd{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid wheat;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 8px;
+    margin: 8px;
+}
+.basket-page{
+    background-color: rgba(49, 4, 4, 0.192);
+}
+.price-basket{
+    padding: 0 8px !important;
+}
+/* moodallll tax */
+.tax-modal{
+    width: 50%;
+    height: 400px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    background-color: #520413;
+    color: wheat;
+    border-radius: 8px;
+    transition: 1.5s;
+}
+.modal-dis-see{
+    display: flex !important;
+}
+.close-tax{
+    cursor: pointer;
+}
+    /* dis modal */
+.dis-modal{
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background-color: #83434f;
+    color: rgb(30, 21, 21);
+    border-radius: 8px;
+    transition: 1.5s;
+    .dis-code{
+        width: 50%;
+        height: 50px;
+    }
+}
+.close-dis-box{
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+}
+.wrong-code{
+    font-size: 16px;
+    color: #2A0A0E;
+}
+/* discount  */
+.discount-box{
+    width: 50%;
+    height: 400px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    background-color: #2d310d;
+    color: rgb(237, 228, 228);
+    border-radius: 8px;
+    transition: 1.5s;
+}
+/* accordion */
+.acc-box{
+    /* width: 60%;
+    height: 100%; */
+    background-color: #6c202e;
+    padding: 10px;
+    border-radius: 8px;
+    color: wheat;
+}
+.acc-header{
+    padding: 8px;
+    border-bottom: 3px solid wheat;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.addacc-body{
+    height: 100% !important;
+    padding: 8px !important;
+}
+.acc-body{
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+.info-img{
+    /* width: 50%;
+    height: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-img img{
+    width: 70%;
+    height: 380px;
+}
+.pay-modal{
+     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999999;
+    background-color: #2c0404;
+    color: rgb(20, 11, 11);
+    border-radius: 8px;
+    transition: 1.5s;
+    div{
+        width: 50%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        color: black;
+        background-color: rgb(234, 178, 210);
+        border-radius: 8px;
+    }
+}
+.without-discount{
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background-color: #39230d;
+    color: rgb(234, 225, 225);
+    border-radius: 8px;
+    transition: 1.5s;
+}
+/* -----------js menu--media----md-- */
+@media screen and (max-width: 768px) {
+    .header-con{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+    header{
+    height: 100px;
+    background-color: #33141A;
+    display: flex;
+    padding: 4px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative; 
+    }
+    .title-site{
+        width: 100%;
+        height: 100%;
+        font-size: 2.5rem;
+        line-height: 92px;
+        color: rgb(245, 245, 245);
+    }
+    .victoria-menu{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    }
+    .logo-victoria{
+        position: absolute;
+        top: 30px;
+        left: 10%;
+        width: 50px;
+        height: 50px;
+    }
+    .logo-victoria img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .menu-ris{
+        display: flex;
+        gap: 4px;
+        align-items: start;
+        justify-content: start;
+        position: absolute;
+        top: 102px;
+        right: 10%;
+        padding: 2px;
+    }
+    .rismenu{
+    height: 350px;
+    }
+    .f-img{
+        width: 100%;
+        height: 100%;
+    }
+    /* code------------- */
+    .discount-code-modal{
+        width: 90%;
+        h1{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 18px;
+        }
+        .dis-code{
+            font-size: 20px;
+        }
+        .code-text{
+            font-size: 16px;
+        }
+    }
+    /* slide */
+    .img-slide{
+        width: 100%;
+        height: 200px;
+    }
+
+}
+/* --------------------------------js theme------------ */
+.light{
+    background-color: #b3757b7a;
+}
+.dark{
+    background-color: rgb(44, 38, 38);
+    color: white;
+    button{
+        color: white;
+    }
+    .discount-code-modal{
+        background-color: rgb(214, 212, 212);
+        color: black;
+        box-shadow: 0 0 30px rgb(175, 111, 120);
+    }
+}
