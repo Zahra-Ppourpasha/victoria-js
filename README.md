@@ -14,3 +14,7 @@ Users can add products to the shopping cart, change the quantity, and see the to
 - Change product quantity
 - Calculate total price
 - Discount code verification
+
+ ### Note
+
+This project was developed as part of my web development studies. The responsive design is currently incomplete on some pages, as the project was developed primarily for learning and practicing front-end concepts.
