@@ -68,6 +68,7 @@ else{
         sum+=num
 }
 localStorage.setItem("Code",sum) 
+disCode.textContent=sum
 }
 setTimeout(() => {
     codeBox.classList.replace("d-none","d-flex")
